@@ -329,7 +329,7 @@ header.header-fixed {
 .logo img,
 .logo-mobile img {
   display: block;
-  max-height: 80px;
+  max-height: 130px;
 }
 
 .logo-mobile {

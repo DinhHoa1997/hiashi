@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="vi">
+
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Page-name</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+        <meta name="theme-color" content="#0099ff" />
+
+        <meta http-equiv="Content-Language" content="VN" />
+        <meta name="description" content="Page-name" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" name="og:url" content="" data-app/>
+        <meta property="og:type" name="og:type" content="website" data-app/>
+        <meta property="og:description" name="og:description" content="Page-name" data-app/>
+        <meta property="og:title" name="og:title" content="Page-name" data-app/>
+
+        <meta property="og:image" name="og:image" content="/uploaded/logo/logo.png" data-app>
+        <meta property="og:image:alt" name="og:image:alt" content="/uploaded/logo/logo.png" data-app>
+        <link href="/favicon.ico" rel="shortcut icon" />        
+
+     
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+        <link rel="stylesheet" type="text/css" href="/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+        <link rel="stylesheet" type="text/css" href="/css/font.css" />
+        <link rel="stylesheet" type="text/css" href="/css/fontawesome-5.12.1/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/jquery.mmenu.all.css" />
+        <link rel="stylesheet" href="/css/jquery-ui.css" />
+
+        <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+        <link rel="stylesheet" href="/css/hover.css" />
+        <script src="/js/jquery-1.10.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+        
+
+        
+
+    </head>    
+
+
+<body>
+
+
+
+<div id="page">
+
+
+    <!-- header pc -->
+    <header class="header hide-on-pad hide-on-tab">
+      <div class="grid">
+        
+        <div class="flex-container align-center">
+            <div class="cell-1-5">
+              <div class="logo">
+                <a href="/">
+                  <img src="/uploaded/logo/logo.png" alt="LogoSite"
+                    style="max-width:100%; margin:0 auto"></a>
+                </div>
+            </div>
+           <div class="cell-4-5">
+            <div class="menubar">
+              <ul class="nav  hide-on-mobile">
+                  <li class=" active ">
+                    <a href="/" class=""><span style="background-image:url()"> Trang chủ       
+                  </li>
+                  <li class=" ">
+                    <a href="/" class="">
+                          <span style="background-image:url()"> Giới thiệu</span>
+                            </a>
+                      <ul class="submnu1" style="display: none;">
+                        <li class="">
+                          <a href="/phat-trien-dien-nang/">Về chúng tôi</a>
+                        </li>
+                        <li class="">
+                          <a href="/dau-tu-bat-dong-san/">Lịch sử hình thành</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Dịch vụ    
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Sản phẩm 
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Tin tức nổi bật
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Liên hệ
+                  </li> 
+              </ul>
+              <div class="btn btndangnhap">
+                  <a href="#dangnhap">Đăng nhập</a>
+              </div>
+           </div>
+          </div>
+        </div>
+      <div class="c"></div>
+    </header>
+    <!-- end header pc -->
+    <header class="header hide-on-pc error">
+      <div class="mobile-bar hide-on-pc">
+        <div class="grid">
+            <div class="flex-container align-center">
+                <div class="cell-1-3">
+                   
+                    <a class="menu-mobile" href="#menu">
+                      <i class="fas fa-bars"></i>
+                   </a>
+                   
+                </div>
+                <div class="cell-1-3">
+                 
+                  <div class="logo">
+                      <a href="/">
+                        <img src="/uploaded/logo/Logo_full 1.png" alt="Logo web" style="max-width: 100%; margin: 0 auto" />
+                      </a>
+                  </div>
+                 
+              </div>
+            
+                <div class="icon-search search-mb" >
+                  <i class="fa fa-search search-iconmb" aria-hidden="true"></i>
+                    <div class="frm-search-mb" style="">
+                     <form action="/search/" method="get" id="searchformtab">
+                        <input name="qr" class="kw-mobile" placeholder="Tìm kiếm " type="text">
+                        <a href="#" class="submit-search-pc" onClick="$('#searchformtab').submit(); return false;"> 
+                          <i class="fa fa-search" aria-hidden="true"></i> </a>
+  
+                        <a href="#" class="closeX" onClick="$('.frm-search-mb').hide(); return false;">&#10005;</a>        
+                      </form>
+                    </div> 
+                    
+                    <script>
+                      $(document).ready(function () {
+                      $(".search-iconmb").click(function () {
+                        $(".frm-search-mb").stop().slideToggle("fast");
+                        return false;
+                      });
+                      });
+                    </script>  	
+                   </div>
+               
+            </div>
+            </div>
+        </div>
+        <div class="c"></div>
+      
+    </header>
+    <!-- content -->
+    <div class="content">
+    <div class="info-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+           <div class="grid">
+                <div class="flex-container">
+                    <div class="cell-1-2 tab-cell-1-1">
+                        <div class="homecat-title">
+                            Chia sẻ để kết nối
+                        </div>
+                        <div class="c30"></div>
+                        Mong muốn người Việt Nam được kết nối và tận hưởng những công nghệ tiên tiến nhất của Nhật Bản và thế giới.
+                        <div class="c30"></div>
+                        <div class="flex-container align-center flex-container-round ">
+                            <div class="btn-seemore">
+                                <a href="#"> Đặt lịch tư vấn</a>
+                            </div>
+                           <div class="btn-xemvideo">
+                            <a href="#"> <i class="fas fa-play"></i> Xem video </a>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="cell-1-2 tab-cell-1-1">
+                            <img src="/uploaded/gioi-thieu/item5.png" alt="">
+                    </div>
+                </div>
+                <div class="c30"></div>
+                <div class="c20 hide-on-mobile"></div>
+                <div class="inhome-item">
+                    <div class="flex-container">
+                        <div class="cell-1-2 tab-cell-1-2 inhome-img">
+                            <a href="#"> <img src="/uploaded/dichvu/item2.jpg" alt=""></a>
+                         </div>
+                        <div class="cell-1-2 tab-cell-1-1 inhome-desc">
+                            <div class="homecat-title">
+                                Liệu pháp <span> Tế bào gốc </span>
+                            </div>
+                            <div class="c20"></div>
+                            Liệu pháp tế bào gốc là liệu pháp y học tái tạo, sử dụng tế bào gốc để sửa chữa thay thế các tế bào, các mô bị tổn thương hoặc bị bệnh trong cơ thể. Hiệu quả trong tăng cường sức khỏe, trẻ hóa cơ thể và điều trị một số bệnh mãn tính.
+                            <ul>
+                              <li>
+                              <h5>
+                                <i class="fas fa-check"></i> Trẻ hóa và cải thiện sức khỏe
+                              </h5>
+                              <div class="">
+                                 Bổ sung tế bào gốc cho da mặt giúp sản sinh thêm Collagen, Elastine, HA và phục hồi các vùng bị tổn thương, giúp làn da săn chắc mịn màng và xóa mờ các nếp nhăn.
+                              </div>
+                              </li>
+                              <li>
+                              <h5>
+                                <i class="fas fa-check"></i>   Hỗ trợ điều trị bệnh mãn tính
+                              </h5>
+                              <div class="">
+                              Liệu pháp tế bào gốc cho thấy nhiều tiềm năng trong điều trị nhiều bệnh mãn tính như: <span>Tiểu đường tuýp 1, Tiểu đường tuýp 2, Viêm khớp gối, Hói (mất tóc), Suy giảm trí nhớ, Parkinson, Rối loạn cương dương,</span> các bệnh nội tiết, viêm nhiễm... và hỗ trợ trong việc điều trị bệnh ung thư.
+                              </div>
+                              <div class="c30"></div>
+                              <div class="btn-seemore">
+                                    <a href="#"> Tìm hiểu thêm</a>
+                              </div>
+                              </li>
+                              </ul>
+                          </div>
+                         
+                    </div>
+                  </div>
+           </div>
+
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+    </div>
+    <div class="sumenh-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="grid">
+          <div class="flex-container">
+            <div class="cell-1-2 tab-cell-1-1">
+                <div class="homecat-title">
+                    Sứ mệnh
+                    </div>
+                    Sứ mệnh Xây dựng một Việt Nam khỏe mạnh, giúp mỗi người dân Việt có thể tiếp cận các giải pháp y tế tiên tiến với mức chi phí hợp lý nhất.
+                    
+            </div>
+          </div>
+            
+        </div>
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="c20 hide-on-mobile"></div>
+    </div>
+    <div class="c30"></div>
+    <div class="c20 hide-on-mobile"></div>
+    <div class="poster-wrapper">
+        <div class="grid">
+            <div class="poster-item">
+                <img src="/uploaded/gioi-thieu/poster.jpg" alt="">
+                <div class="poster-content">
+                   <div class="flex-container align-center">
+                        <div class="cell-1-2 tab-cell-1-1">
+                            <div class="poster-name">
+                                    4.9
+                              
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="rate-txt"> Đánh giá từ khách hàng</div>
+                        </div>
+                        <div class="cell-1-2 tab-cell-1-1">
+                            <div class="poster-name text-left">
+                                JKAAC SẴN SÀNG TƯ VẤN HỖ TRỢ THÔNG TIN 24/7
+                                </div>
+                                <div class="c20"></div>
+                                <div class="btn-lienhe text-center">
+                                    <a href="#"> Liên hệ ngay</a>
+                                </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="giatricotloi-wrapper">
+    <div class="c30"></div>
+    <div class="c20 hide-on-mobile"></div>
+        <div class="grid">
+            <div class="homecat-title text-center">
+            Giá trị<span> Cốt lõi </span>
+            </div>
+            <div class="c30"></div>
+            <div class="giatricotloi">
+                <div class="flex-container">
+                <div class="cell-1-3 tab-cell-1-1 homeservice-item">
+                    
+                    <div class="homeservice-ico">
+                        <i class="far fa-user-md-chat"></i>
+                    </div>
+                    <div class="c20"></div>
+                    <h3 class="homeservice-name" ><a href="#">Tư vấn kết nối du lịch và khám chữa bệnh tại các cơ cở y tế tại Nhật Bản</a></h3>
+                    <div class="c30"></div>
+                    <div class="homeservice-intro">
+                        Sở hữu mạng lưới đối tác là các phòng khám, bệnh viện tại Nhật Bản, chúng tôi tư vấn khách hàng các gói khám chữa bệnh theo yêu cầu.
+                    </div>
+                    </div>
+                    <div class="cell-1-3 tab-cell-1-1 homeservice-item">
+                    
+                    <div class="homeservice-ico">
+                        <i class="far fa-user-md-chat"></i>
+                    </div>
+                    <div class="c20"></div>
+                    <h3 class="homeservice-name" ><a href="#">Tư vấn kết nối du lịch và khám chữa bệnh tại các cơ cở y tế tại Nhật Bản</a></h3>
+                    <div class="c30"></div>
+                    <div class="homeservice-intro">
+                        Sở hữu mạng lưới đối tác là các phòng khám, bệnh viện tại Nhật Bản, chúng tôi tư vấn khách hàng các gói khám chữa bệnh theo yêu cầu.
+                    </div>
+                    </div>
+                    <div class="cell-1-3 tab-cell-1-1 homeservice-item">
+                    
+                    <div class="homeservice-ico">
+                        <i class="far fa-user-md-chat"></i>
+                    </div>
+                    <div class="c20"></div>
+                    <h3 class="homeservice-name" ><a href="#">Tư vấn kết nối du lịch và khám chữa bệnh tại các cơ cở y tế tại Nhật Bản</a></h3>
+                    <div class="c30"></div>
+                    <div class="homeservice-intro">
+                        Sở hữu mạng lưới đối tác là các phòng khám, bệnh viện tại Nhật Bản, chúng tôi tư vấn khách hàng các gói khám chữa bệnh theo yêu cầu.
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infoleader-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+            <div class="grid">
+                <div class="flex-container ">
+                    <div class="cell-1-3 tab-cell-1-1">
+                            <img src="/uploaded/gioi-thieu/giamdoc.jpg" alt="">
+                    </div>
+                    <div class="cell-2-3 tab-cell-1-1 quote">
+                        <div class="c30"></div>
+                            <a href="#" class="homecat-title-sm"> CHIA SẺ TỪ TỔNG GIÁM ĐỐC</a>
+                        <div class="c30"></div>
+                        <div class="info-leader-content">
+                            Sự giàu có về vật chất được đánh đổi bằng thời gian và sức khỏe - vốn là kho báu vô giá được ban tặng từ khi con người được sinh ra. Điều đó đúng với quá khứ, hiện tại và tương lai. Con người luôn cố gắng theo đuổi những điều mình chưa có mà quên đi việc giữ gìn những kho báu vốn có.
+                                <br>
+                                <br>
+                            Khác với vật chất, "thời gian" và Sức khỏe khi đã mất đi sẽ không lấy lại được.
+                                <br>
+                                <br>
+                            Như một phép màu, công nghệ y học hàng đầu về tế bào đã giúp con người tái tạo lại sức khỏe, dự phòng bệnh hiểm nghèo, kéo dài thêm thời gian để chúng ta có thể hưởng thụ những thành quả gây dựng được do nỗ lực cống hiến cả đời. Mirai Care – Chăm sóc tương lai của bạn.
+
+                            <div class="c30"></div>
+                            <div class="info-name">
+                                Nguyễn Việt Tiến
+                            </div>
+                            <div class="info-position">
+                                Tổng giám đốc
+                            </div>
+                          
+                          
+
+                  </div>
+                </div>
+            </div>
+
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+    </div>
+
+     
+          
+    <!-- end content -->
+
+    </div>
+    <div class="whyus-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="inhome-item">
+          <div class="flex-container">
+             
+              <div class="cell-1-2 tab-cell-1-1 inhome-desc">
+                  <div class="homecat-title">
+                    Tại sao chọn <span>  MIRAI CARE </span>
+                  </div>
+                  <div class="c20"></div>
+                  Liệu pháp tế bào gốc là liệu pháp y học tái tạo, sử dụng tế bào gốc để sửa chữa thay thế các tế bào, các mô bị tổn thương hoặc bị bệnh trong cơ thể. Hiệu quả trong tăng cường sức khỏe, trẻ hóa cơ thể và điều trị một số bệnh mãn tính.
+                  <ul>
+                    <li>
+                  
+                      <i class="fas fa-check"></i> Trẻ hóa và cải thiện sức khỏe
+                  
+                   
+                    </li>
+                    <li>
+                  
+                      <i class="fas fa-check"></i>   Hỗ trợ điều trị bệnh mãn tính
+                   
+                   
+                    <div class="c30"></div>
+                    <div class="btn-seemore">
+                          <a href="#"> Tìm hiểu thêm</a>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="cell-1-2 tab-cell-1-2 inhome-img">
+                  <a href="#"> <img src="/uploaded/dichvu/item2.jpg" alt=""></a>
+               </div>
+               
+          </div>
+        </div>
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="topfooter">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="grid">
+            <a href="#" class="homecat-title-sm">
+               Đối tác của chúng tôi
+            </a>
+          <div class="c30"></div>
+            <div class="flex-container">
+              <div class="swiper-container swiper-partner">
+                <div class="swiper-wrapper">
+               
+                    <div class="swiper-slide homepartner-item">
+                        <div class="">
+                            
+                                <a href="" target=""><img src="/uploaded/doitac/item1.png" width="100%"  alt="Đối tác 1"></a>
+                           
+                        </div>
+                    </div>
+                    <div class="swiper-slide homepartner-item">
+                      <div class="">
+                          
+                              <a href="" target=""><img src="/uploaded/doitac/item2.png" width="100%"  alt="Đối tác 1"></a>
+                         
+                      </div>
+                  </div>
+                  <div class="swiper-slide homepartner-item">
+                    <div class="">
+                        
+                            <a href="" target=""><img src="/uploaded/doitac/item3.png" width="100%"  alt="Đối tác 1"></a>
+                       
+                    </div>
+                </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <script>
+          var swiper_partner = new Swiper('.swiper-partner', {
+              loop: true,
+              slidesPerView: 8,
+              autoplay: {
+                  delay: 2200,
+                  disableOnInteraction: false,
+              },
+              spaceBetween: 20,
+              navigation: {
+                  nextEl: '.partner-next',
+                  prevEl: '.partner-prev',
+              },
+             
+              speed: 400,
+            
+              breakpoints: {
+                  768: {
+                      slidesPerView: 4,
+                      spaceBetween: 10
+                  }
+              }
+          });
+          $('.swiper-partner').on('mouseover', function () {
+              swiper_partner.autoplay.stop();
+          });
+          $('.swiper-partner').on('mouseout', function () {
+              swiper_partner.autoplay.start();
+          });
+      </script> 
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+      </div>
+ 
+      <div class="footer-main">
+        <div class="c30"></div>
+        <div class="grid">
+
+          <div class="flex-container">
+            <div class="cell-1-4 tab-cell-1-1">
+              <div class="c30"></div>
+                <a href="#">
+                    <img src="/uploaded/logo/logo-white.png" style="max-width: 150px;" alt="">
+                </a>
+                <div class="c20"></div>
+              
+                 <div class="info">
+                   Trụ sở: 85 Phố Vương Thừa Vũ, Thanh Xuân, Hà nội
+                 </div>
+                 <div class="info">
+                   Điện thoại: 0869 066 288 
+                  
+               </div>
+               <div class="info">
+                  Email: nfo@company.com
+             </div>
+            </div>
+            <div class="cell-1-4 tab-cell-1-1">
+              <div class="c30"></div>
+              <div class="footer-block">  
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Giới thiệu
+               </div>
+              <ul class="menuboxfooter" id="boxcol5">
+              <li><a href="/gioi-thieu-chung/"> Giới thiệu chung</a></li>
+              <li><a href="/tam-nhin-chien-luoc/"> Tầm nhìn chiến lược </a></li>
+              <li><a href="/gia-tri-cot-loi/"> Giá trị cốt lõi</a></li>
+              </ul> 
+              </div>
+          </div>
+         <div class="cell-1-4 tab-cell-1-1">
+          <div class="c30"></div>
+              <div class="footer-block">  
+                <div class="footer-title footer-title-mobile" rel="ct">
+                 Dịch vụ nổi bật
+               </div>
+              <ul class="menuboxfooter" id="boxcol5">
+              <li><a href="/gioi-thieu-chung/"> Liệu pháp tế bào gốc
+               </a></li>
+              <li><a href="/tam-nhin-chien-luoc/">  Liệu pháp miễn dịch </a></li>
+             
+              </ul>
+            
+
+              </div>
+
+          </div>
+          <div class="cell-1-4 tab-cell-1-1">
+            <div class="c30"></div>
+             <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Theo dõi chúng tôi
+                  </div>
+                <ul class="footer-social">
+                
+                  <li class="facebook  hvr-float">
+                    <a href="https://www.facebook.com/hocbongvnu" class="footer-social__item">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="youtube  hvr-float">
+                    <a href="#" class="footer-social__item">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                
+                  <li class="instagram  hvr-float">
+                    <a href="" class="footer-social__item">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                
+                </ul>
+             </div>
+          </div>
+          
+              
+            
+        </div>
+        
+        <div class="c20"></div>
+        <div class="footer-copyright">
+          <div class="c20"></div>
+          <div class="grid">
+            Copyright © 2023 companys
+          </div>
+          <div class="c10"></div>
+        </div>
+           
+        </div>
+       
+      </div>
+
+     
+    </footer>
+    <!-- end footer -->
+</div>
+
+
+  <script src="/js/jquery.fancybox.js"></script>
+ 
+  
+  <script src="/js/script.js"></script>
+
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/jquery.form.min.js"></script>
+  <script src="/js/jquery.mmenu.min.all.js"></script>
+
+  
+</body>
+
+</html>

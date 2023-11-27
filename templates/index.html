@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="vi">
+
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Page-name</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+        <meta name="theme-color" content="#0099ff" />
+
+        <meta http-equiv="Content-Language" content="VN" />
+        <meta name="description" content="Page-name" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" name="og:url" content="" data-app/>
+        <meta property="og:type" name="og:type" content="website" data-app/>
+        <meta property="og:description" name="og:description" content="Page-name" data-app/>
+        <meta property="og:title" name="og:title" content="Page-name" data-app/>
+
+        <meta property="og:image" name="og:image" content="/uploaded/logo/logo.png" data-app>
+        <meta property="og:image:alt" name="og:image:alt" content="/uploaded/logo/logo.png" data-app>
+        <link href="/favicon.ico" rel="shortcut icon" />        
+
+     
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+        <link rel="stylesheet" type="text/css" href="/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       
+        <link rel="stylesheet" type="text/css" href="/css/font.css" />
+        <link rel="stylesheet" type="text/css" href="/css/fontawesome-5.12.1/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/jquery.mmenu.all.css" />
+        <link rel="stylesheet" href="/css/jquery-ui.css" />
+
+        <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+        <link rel="stylesheet" href="/css/hover.css" />
+        <script src="/js/jquery-1.10.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+        
+
+        
+
+    </head>    
+
+
+<body>
+
+
+
+<div id="page">
+
+
+    <!-- header pc -->
+    <header class="header hide-on-pad hide-on-tab">
+      <div class="grid">
+        <div class="topheader">
+            <div class="flex-container align-center">
+              <div class="cell-1-3 tab-cell-1-1">
+                <ul class="social">
+                  
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/hocbongvnu" class="footer-social__item">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="youtube">
+                    <a href="#" class="footer-social__item">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                
+                  <li class="instagram">
+                    <a href="" class="footer-social__item">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                
+                </ul>
+              </div>
+              <div class="cell-1-3 tab-cell-1-1 text-center">
+                  <div class="logo">
+                    <a href="/">
+                      <img src="/uploaded/logo/logo.png" alt="LogoSite"
+                      style="max-width:100%; margin:0 auto">
+                    </a>
+                  </div>
+              </div>
+              <div class="cell-1-3 tab-cell-1-1">
+                <div class="lang-flag">
+                  <a href="/en/" class="en"> EN </a>
+                </div>
+                <div class="icon-search">
+                  <i class="fa fa-search search-icon" aria-hidden="true"></i> 
+                  <div class="search-pc" style="display: none;">
+                      <form action="/search/" method="get" id="searchformtab">
+                          <input name="qr" id="qr_search" class="kw-mobile" placeholder="Tìm kiếm" type="text">
+                              <a href="#" class="closeX" onclick="$('.search-pc').hide(); return false;">✕</a>        
+                      </form>
+                  </div>
+                  <script type="text/javascript">
+
+                      $(".submit-search-pc").click(function () {
+                          if ($("#qr_search").val() != "")
+                              $('#searchformtab').submit();
+                          return false;
+
+                      });
+
+                      $(document).ready(function () {
+                          $(".search-icon").click(function () {
+                              $(".search-pc").stop().slideToggle("fast");
+                              return false;
+                          });
+                      });
+                  </script>  	
+                  <div class="c"></div>
+                </div>
+               
+              </div>
+            </div>
+        </div>
+        <div class="flex-container align-center">
+            
+           <div class="cell-1-1">
+            <div class="menubar">
+              <!-- <ul class="nav  hide-on-mobile">
+                  <li class=" active ">
+                    <a href="/" class=""><span style="background-image:url()"> Trang chủ       
+                  </li>
+                  <li class=" ">
+                    <a href="/" class="">
+                          <span style="background-image:url()"> Giới thiệu</span>
+                            </a>
+                      <ul class="submnu1" style="display: none;">
+                        <li class="">
+                          <a href="/phat-trien-dien-nang/">Về chúng tôi</a>
+                        </li>
+                        <li class="">
+                          <a href="/dau-tu-bat-dong-san/">Lịch sử hình thành</a>
+                        </li>
+                      </ul>
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Sản phẩm  
+                  
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()">Dự án
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Tin tức
+                  </li>
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Tuyển dụng
+                  </li> 
+                  <li class=" ">
+                    <a href="/" class=""><span style="background-image:url()"> Liên hệ
+                  </li> 
+              </ul> -->
+           
+           </div>
+          </div>
+        </div>
+      <div class="c"></div>
+    </header>
+    <!-- end header pc -->
+    <header class="header hide-on-pc error">
+      <div class="mobile-bar hide-on-pc">
+        <div class="grid">
+            <div class="flex-container align-center">
+                <div class="cell-1-3">
+                   
+                    <!-- <a class="menu-mobile" href="#menu">
+                      <i class="fas fa-bars"></i>
+                   </a> -->
+                   
+                </div>
+                <div class="cell-1-3">
+                 
+                  <div class="logo">
+                      <a href="/">
+                        <img src="/uploaded/logo/logo.png" alt="Logo web" style="max-width: 100%; margin: 0 auto" />
+                      </a>
+                  </div>
+                 
+                </div>
+                <div class="cell-1-3"> 
+
+                </div>
+            
+                <!-- <div class="icon-search search-mb" >
+                  <i class="fa fa-search search-iconmb" aria-hidden="true"></i>
+                    <div class="frm-search-mb" style="">
+                     <form action="/search/" method="get" id="searchformtab">
+                        <input name="qr" class="kw-mobile" placeholder="Tìm kiếm " type="text">
+                        <a href="#" class="submit-search-pc" onClick="$('#searchformtab').submit(); return false;"> 
+                          <i class="fa fa-search" aria-hidden="true"></i> </a>
+  
+                        <a href="#" class="closeX" onClick="$('.frm-search-mb').hide(); return false;">&#10005;</a>        
+                      </form>
+                    </div> 
+                    
+                    <script>
+                      $(document).ready(function () {
+                      $(".search-iconmb").click(function () {
+                        $(".frm-search-mb").stop().slideToggle("fast");
+                        return false;
+                      });
+                      });
+                    </script>  	
+                   </div> -->
+               
+            </div>
+            </div>
+        </div>
+        <div class="c"></div>
+      
+    </header>
+    <!-- content -->
+    <div class="content">
+      
+      <!-- slideshow -->
+      <div class="swiper-container" id="slide_home">
+    
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slidehome">
+              <img class="" src="/uploaded/du-an/item4.jpg" alt="" style="width: 100%" />
+              <!-- <div class="slidehome-content">
+                <div class="grid">
+                    <div class="flex-container">
+                      <div class="cell-1-2 tab-cell-1-1">
+                        <h2>Lorem ipsum placeholder
+                          text commonly used</h2>
+                          <div class="c10"></div>
+                          <div class="text-line-2">
+                            Lorem ipsum is placeholder text commonly used
+                            in the graphic, print, and publishing industries
+                          </div>
+                            <div class="c30"></div>
+                              <a href="#" class="btn btn-xemthem">Xem chi tiết</a>
+                          
+                      </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slidehome">
+            <img class="hide-on-mobile" src="/uploaded/slideshow/item1.png" alt="" style="width: 100%" />
+          </div>
+        </div>
+      
+      </div>
+
+      </div>
+      <script>
+        $(function () {
+          var swiper_slide_home = new Swiper("#slide_home", {
+            loop: true,
+            slidesPerView: 1,
+            autoHeight:true,
+            autoplay: {
+              simulateTouch: true,
+              delay: 5000000,
+              disableOnInteraction: false,
+            },
+            spaceBetween: 0,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            speed: 500,
+            spaceBetween: 0,
+          });
+
+          $("#slide_home").on("mouseover", function () {
+            swiper_slide_home.autoplay.stop();
+          });
+          $("#slide_home").on("mouseout", function () {
+            swiper_slide_home.autoplay.start();
+          });
+        });
+      </script>
+      <!-- end slideshow -->  
+      <div class="homeinfo-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+          <div class="grid">
+            <div class="flex-container">
+              <div class="cell-1-2 tab-cell-1-1">
+               
+                <div class="homecat-title">
+                  <div class="homecat-title-sm">
+                    Về chúng tôi
+                </div>
+                  <div class="c10"></div>
+                  CÔNG TY CP TẬP ĐOÀN SÀI GÒN CONSTRUCTION
+
+                </div>
+                <div class="c20"></div>
+                Nhằm đáp ứng nhu cầu và đồi hỏi ngày càng cao về Thiết kế, 
+                Thi công, Nghiệm thu hệ thống PCCC, Báo cháy và thi công 
+                giải pháp vật liệu chống cháy cho các nhà đầu,
+                 với kinh nghiệm và nền tảng nhà máy sản xuất phương tiện PCCC, 
+                 <b>Công ty Cổ phần Tập đoàn Sài Gòn Construction (“SAIGON CONSTRUCTION CORP”) </b>
+                 tự hào đã cung cấp cho thị trường nhiều sản phẩm mới đáp ứng đầy đủ
+                  yêu cầu pháp luật PCCC của Việt Nam. 	
+                  <br>
+                  <div class="c10"></div>
+                  <b> Công ty Cổ phần Tập đoàn Sài Gòn Construction</b> từng bước trở thành đơn vị
+                    đi đầu trong việc thi công và cung cấp Giải pháp-Thiết bị hệ thống PCCC,
+                     hệ thống thoại, hệ thống mạng, hệ thống Camera an ninh giám sát của 
+                     các hãng lớn trên thế giới như: Bien Bac, Smart Fire, Bach Dang,
+                      Desam, Hochiki; Honeywell; Unipos; Horing; Panasonic, Alcatel,
+                       Siemens, Nec, Polycom, LG, Samsung, AMP, Dell, HP, 3Com, Juniper, 
+                       Cisco...
+              <br>
+               
+              </div>
+              <div class="cell-1-2 tab-cell-1-1">
+                  <img src="/uploaded/gioi-thieu/gioithieu`.jpg" alt="">
+              </div>
+            </div>
+  
+            <div class="c30"></div>
+            <div class="homeinfo-intro">
+                Giải pháp PCCC Toàn diện
+            </div>
+            <div class="c10"></div>
+           <div class="homeinfo">
+            <div class="flex-container">
+              <div class="cell-1-3 tab-cell-1-1 homeinfo-item">
+                  <div class="infonumber">
+                      700 <span>+ </span>
+                    
+                  </div>
+                  <div class="homeinfo-name">
+                      công ty kiến trúc quan tâm
+                  </div>
+              </div>
+                <div class="cell-1-3 tab-cell-1-1 homeinfo-item">
+                  <div class="infonumber">
+                      400 <span>+ </span>
+                    
+                  </div>
+                  <div class="homeinfo-name">
+                     Công trình áp vào thiết kế
+                  </div>
+                </div>
+                <div class="cell-1-3 tab-cell-1-1 homeinfo-item">
+                  <div class="infonumber">
+                      15 <span>+ </span>
+                    
+                  </div>
+                  <div class="homeinfo-name">
+                      Nhãn hàng hợp tác
+                  </div>
+              </div>
+          </div>
+           </div>
+          </div>
+   
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+      </div>  
+      
+      <div class="homeproduct-wrapper">
+        <div class="c30"></div>
+          <div class="grid">
+              <div class="flex-container">
+                  <div class="cell-2-3 tab-cell-1-1">
+                      <div class="homecat-title">
+                          Sản phẩm nổi bật của <span>SAIGON CONSTRUCTION</span>
+                      </div>
+                  </div>
+                  <div class="cell-1-3 tab-cell-1-1">
+                    <div class="view-all"><a href="#">Xem tất cả</a></div>
+                  </div>
+              </div>
+              <div class="flex-container">
+                  <div class="cell-1-2 tab-cell-1-1">
+                    <div class="c30"></div>
+                    <div class="productcat-item"> 
+              
+                      <div class="img-shine">
+                        <img src="/uploaded/san-pham/item2.jpg" alt="">
+                      </div>
+                      <div class="productcat-content">
+                        <div class="productcat-name">
+                            <a href="#">
+                              Hệ thống báo cháy không giây
+                            </a>
+                        </div>
+                        
+                        <div class="product-intro">
+                          Hệ thống báo cháy không giây và thiết bị báo cháy cục bộ đã được cục cảnh sát phòng cháy chữa cháy và cứu nạn, cứu hộ kiểm định chất lượng
+                        </div>
+                        <div class="c30"></div>
+                        <div class="view-detail"><a href="#">Xem chi tiết</a></div>
+                      </div>
+                          
+                      
+                    </div>
+                    <div class="c30"></div>
+                    
+                  </div>
+                  <div class="cell-1-2 tab-cell-1-1">
+                    <div class="c30"></div>
+                    <div class="productcat-item"> 
+              
+                      <div class="img-shine">
+                        <img src="/uploaded/san-pham/item7.png" alt="">
+                      </div>
+                      <div class="productcat-content">
+                        <div class="productcat-name">
+                            <a href="#">
+                              Thiết bị báo cháy cục bộ
+                            </a>
+                        </div>
+                        
+                        <div class="product-intro">
+                          Hệ thống báo cháy không giây và thiết bị báo cháy cục bộ đã được cục cảnh sát phòng cháy chữa cháy và cứu nạn, cứu hộ kiểm định chất lượng
+                        </div>
+                        <div class="c30"></div>
+                        <div class="view-detail"><a href="#">Xem chi tiết</a></div>
+                      </div>
+                          
+                      
+                    </div>
+                    <div class="c30"></div>
+                    
+                  </div>
+                  
+              </div>
+              <div class="c30"></div>
+              <div class="home-produclist">
+                <div class="swiper-container" id="slide_product">
+ 
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide">
+                      <div class="product-item">
+                          <div class="img-product">
+                              <a href="#"> 
+                                <img src="/uploaded/san-pham/item3.jpg" alt="">
+                              </a>
+                          </div>
+                          <div class="product-content">
+                              <div class="product-name">
+                                  <a href="#" class="text-line-"> Module giám sát địa chỉ</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                      <div class="swiper-slide">
+                          <div class="product-item">
+                              <div class="img-product">
+                                  <a href="#"> 
+                                    <img src="/uploaded/san-pham/item4.jpg" alt="">
+                                  </a>
+                              </div>
+                              <div class="product-content">
+                                  <div class="product-name">
+                                      <a href="#" class="text-line-"> Hệ thống báo cháy không giây</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <a href="#"> 
+                                  <img src="/uploaded/san-pham/item5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <a href="#"  class="text-line-2"> Trung tâm báo cháy không giây</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <a href="#"> 
+                                  <img src="/uploaded/san-pham/item6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <a href="#"  class="text-line-2"> Đầu báo khói/nhiệt địa chỉ</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <a href="#"> 
+                                  <img src="/uploaded/san-pham/Untitled-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <a href="#"  class="text-line-2">Tổ hợp không giây địa chỉ</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                   
+                  </div>
+                </div>
+                <div class="slide-btn-next homeslideproduct-prev">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                <div class="slide-btn-prev homeslideproduct-prev">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              </div>
+              <div class="c30"></div>
+          </div>
+          <script>
+          $(function () {
+              var swiper_slide_product = new Swiper('#slide_product', {
+                  loop: true,
+                  slidesPerView: 4,
+                  autoplay: {
+                      delay: 3000,
+                      disableOnInteraction: false,
+                  },
+                  spaceBetween: 0,
+                  navigation: {
+                      nextEl: '.homeslideproduct-prev',
+                      prevEl: '.homeslideproduct-next',
+                  },
+                  speed: 500,
+                  spaceBetween: 0,
+              });
+
+              $('#slide_product').on('mouseover', function () {
+                  swiper_slide_product.autoplay.stop();
+              });
+              $('#slide_product').on('mouseout', function () {
+                  swiper_slide_product.autoplay.start();
+              });
+
+          });
+      </script>
+          <div class="c30"></div>
+          <div class="c30 hide-on-mobile"></div>
+      </div>
+      <div class="homeservice-wrapper">
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+        <div class="grid">
+          <div class="flex-container">
+            <div class="cell-2-3 tab-cell-1-1">
+                <div class="homecat-title">
+                    Dịch vụ của <span>SAIGON CONSTRUCTION</span>
+                </div>
+            </div>
+            <div class="cell-1-3 tab-cell-1-1">
+              <div class="view-all"><a href="#">Xem tất cả</a></div>
+            </div>
+          </div>
+          <div class="c30"></div>
+          <div class="c20"></div>
+          <div class="homeservicebig-item">  
+              <div class="cell-2-5 tab-cell-1-1 homeservice-image">
+                  <a href="#" class="img-shine"> 
+                      <img src="/uploaded/dichvu/item1.jpg" alt="">
+                  </a>
+              </div>
+              <div class="cell-3-5 tab-cell-1-1 homeservice-desc">
+                  <div class="homeservice-name">
+                    <a href="#">
+                      Thiết kế tư vấn thẩm duyệt & thi công hệ thống PCCC
+                    </a>
+                  </div>
+                  <div class="c20"></div>
+                  <div class="homeservice-intro">
+                    Thủ tục xin <b>thẩm duyệt thiết kế PCCC</b> 
+                    là thủ tục bắt buộc trước khi Chủ đầu tư muốn tiến hành 
+                    xin cấp <b>Giấy phép xây dựng Công trình</b> của mình. 
+                    Dự án xây dựng của Chủ đầu tư có kịp khởi công theo dự kiến hay không,
+                     chủ yếu phụ thuộc vào quá trình làm việc với cơ quan hành chính về các
+                      thủ tục pháp lý để được cấp <b> Giấy phép thẩm duyệt thiết kế PCCC.</b>
+                    <br>
+                    Với đội ngũ thiết kế chuyên nghiệp và tận tâm, 
+                    cùng với hiểu biết về quy định, 
+                    quy chuẩn của pháp luật Việt Nam về PCCC, <b>SAIGON CONSTRUCTION</b> 
+                    sẽ tư vấn cho chủ đầu tư để rút ngắn thời gian lên ý tưởng,
+                     thiết kế và thủ xin thẩm duyệt thiết kế một cách hiệu quả nhất.
+                  </div>
+              </div>
+
+          </div>
+          <div class="c30"></div>
+          <div class="flex-container">
+              <div class="cell-1-3 tab-cell-1-1">
+                <div class="homeservice-item">
+                  <div class="homeservice-image">
+                      <img src="/uploaded/dichvu/item2.jpg" alt="">
+                  </div>
+                  <div class=" homeservice-desc">
+                    <div class="homeservice-name">
+                      <a href="#">
+                        Thiết kế tư vấn thẩm duyệt & thi công hệ thống PCCC
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-1-3 tab-cell-1-1">
+                <div class="homeservice-item">
+                  <div class="homeservice-image">
+                      <img src="/uploaded/dichvu/item2.jpg" alt="">
+                  </div>
+                  <div class=" homeservice-desc">
+                    <div class="homeservice-name">
+                      <a href="#">
+                        Thiết kế tư vấn thẩm duyệt & thi công hệ thống PCCC
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cell-1-3 tab-cell-1-1">
+                <div class="homeservice-item">
+                  <div class="homeservice-image">
+                      <img src="/uploaded/dichvu/item2.jpg" alt="">
+                  </div>
+                  <div class=" homeservice-desc">
+                    <div class="homeservice-name">
+                      <a href="#">
+                        Thiết kế tư vấn thẩm duyệt & thi công hệ thống PCCC
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+
+        <div class="c30"></div>
+        <div class="c20 hide-on-mobile"></div>
+    </div>
+      <div class="homeduan-wrapper">
+          <div class="c30"></div>
+
+          <div class="grid">
+            <div class="flex-container">
+              <div class="cell-2-3 tab-cell-1-1">
+                  <div class="homecat-title">
+                      Dự án tiêu biểu của <span>SAIGON CONSTRUCTION</span>
+                  </div>
+              </div>
+              <div class="cell-1-3 tab-cell-1-1">
+                <div class="view-all"><a href="#">Xem tất cả</a></div>
+              </div>
+            </div>
+            <div class="c30"></div>
+            <div class="swiper-container" id="slide_duan">
+ 
+                <div class="swiper-wrapper"> 
+                <div class="swiper-slide">
+                    <div class="homeduan-item">
+                        <div class="homeduan-img">
+                           <a href="#">  <img src="/uploaded/du-an/item1.jpeg" alt=""></a>
+                        </div>
+                        <div class="homeduan-name">
+                            <a href="#">
+                              DỰ ÁN CHUNG CƯ TRESOR
+                            </a>
+                        </div>
+                    
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="homeduan-item">
+                          <div class="homeduan-img">
+                            <a href="#">  <img src="/uploaded/du-an/item2.jpg" alt=""></a>
+                          </div>
+                          <div class="homeduan-name">
+                              <a href="#">
+                                DỰ ÁN CHUNG CƯ RICH STAR
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                  <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <div class="homeduan-img">
+                        <a href="#">  <img src="/uploaded/du-an/item3.jpg" alt=""></a>
+                      </div>
+                      <div class="homeduan-name">
+                          <a href="#">
+                            DỰ ÁN KHU ĐÔ THỊ MỚI TÂY HỒ TÂY
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <div class="homeduan-img">
+                      <a href="#">  <img src="/uploaded/du-an/item4.jpg" alt=""></a>
+                    </div>
+                    <div class="homeduan-name">
+                        <a href="#">
+                          DỰ ÁN KHÁCH SẠN MARRIOTT JW MARRIOTT HOTEL
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="homeduan-item">
+                      <div class="homeduan-img">
+                        <a href="#">  <img src="/uploaded/du-an/item5.jpg" alt=""></a>
+                      </div>
+                      <div class="homeduan-name">
+                          <a href="#">
+                            NHÀ MÁY LG DISPLAY VIỆT NAM HẢI PHÒNG
+                          </a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+               <div class="slide-btn-next homeslide-duan-next">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </div>
+              <div class="slide-btn-prev homeslide-duan-prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(function () {
+                var swiper_slide_duan = new Swiper('#slide_duan', {
+                    loop: true,
+                    slidesPerView: 2,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    spaceBetween: 3,
+                    navigation: {
+                        nextEl: '.homeslide_duan-next',
+                        prevEl: '.homeslide-duan-prev',
+                    },
+                    speed: 500,
+                    spaceBetween: 0,
+                });
+  
+                $('#slide_product').on('mouseover', function () {
+                    swiper_slide_product.autoplay.stop();
+                });
+                $('#slide_product').on('mouseout', function () {
+                    swiper_slide_product.autoplay.start();
+                });
+  
+            });
+        </script>
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+      </div>
+ 
+     
+          
+    <!-- end content -->
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+   
+      <div class="footer-main">
+        <div class="c30"></div>
+        <div class="grid">
+
+          <div class="flex-container">
+            <div class="cell-1-4 tab-cell-1-1">
+              <div class="c30"></div>
+                <a href="#">
+                    <img src="/uploaded/logo/logo-white.png" style="max-width: 150px;" alt="">
+                </a>
+                <div class="c20"></div>
+              
+                 <div class="info">
+                   Trụ sở: 29/5A Tân Thới Nhất, Khu phố 7, phường Tân Thới Nhất, Quận 12, Thành phố Hồ Chí Minh, Việt Nam.
+
+                 </div>
+                 <div class="info">
+                  VP Hà Nội: Dolphin Plaza, 28 Trần Bình, Nam Từ Liêm, Hà Nội.
+
+                </div>
+                 <div class="info">
+                   Điện thoại: <a href="tel:0968084114 ">096.808.4114</a>   <a href="tel:0981124114">0981.124.114 </a>
+                  
+               </div>
+               <div class="info">
+                Email : saigoncon@gmail.com 
+
+             </div>
+             <div class="info">
+              Website: www.saigonconstruction.vn
+             </div>
+            </div>
+            <div class="cell-1-4 tab-cell-1-1">
+              <div class="c30"></div>
+              <div class="footer-block">  
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Giới thiệu
+               </div>
+              <ul class="menuboxfooter" id="boxcol5">
+              <li><a href="#"> Về chúng tôi</a></li>
+              <li><a href="#"> Lịch sử hình thành </a></li>
+            
+              </ul> 
+              </div>
+          </div>
+         <div class="cell-1-4 tab-cell-1-1">
+          <div class="c30"></div>
+              <div class="footer-block">  
+                <div class="footer-title footer-title-mobile" rel="ct">
+                 Liên kết nhanh
+               </div>
+              <ul class="menuboxfooter" id="boxcol5">
+              <li>
+                  <a href="/gioi-thieu-chung/"> Dịch vụ </a>
+              </li>
+              <li>
+                <a href="/tam-nhin-chien-luoc/"> Sản phẩm </a>
+              </li>
+             
+              </ul>
+            
+
+              </div>
+
+          </div>
+          <div class="cell-1-4 tab-cell-1-1">
+            <div class="c30"></div>
+             <div class="footer-block">
+                <div class="footer-title footer-title-mobile" rel="ct">
+                  Theo dõi chúng tôi
+                  </div>
+                <ul class="footer-social">
+                
+                  <li class="facebook  hvr-float">
+                    <a href="https://www.facebook.com/hocbongvnu" class="footer-social__item">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="youtube  hvr-float">
+                    <a href="#" class="footer-social__item">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                
+                  <li class="instagram  hvr-float">
+                    <a href="" class="footer-social__item">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                
+                </ul>
+             </div>
+          </div>
+          
+              
+            
+        </div>
+        
+        <div class="c20"></div>
+        <div class="footer-copyright">
+          <div class="c20"></div>
+          <div class="grid">
+            Copyright © 2023 companys
+          </div>
+          <div class="c10"></div>
+        </div>
+           
+        </div>
+       
+      </div>
+
+     
+    </footer>
+    <!-- end footer -->
+</div>
+
+
+  <script src="/js/jquery.fancybox.js"></script>
+ 
+  
+  <script src="/js/script.js"></script>
+
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/jquery.form.min.js"></script>
+  <script src="/js/jquery.mmenu.min.all.js"></script>
+
+  
+</body>
+
+</html>
